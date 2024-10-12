@@ -37,6 +37,8 @@
             label3 = new Label();
             txtTelefono = new TextBox();
             btnAgregar = new Button();
+            button1 = new Button();
+            btnActualizar = new Button();
             ((System.ComponentModel.ISupportInitialize)dgvClientes).BeginInit();
             SuspendLayout();
             // 
@@ -116,11 +118,33 @@
             btnAgregar.UseVisualStyleBackColor = true;
             btnAgregar.Click += btnAgregar_Click;
             // 
+            // button1
+            // 
+            button1.Location = new Point(693, 409);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 23);
+            button1.TabIndex = 5;
+            button1.Text = "button1";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // btnActualizar
+            // 
+            btnActualizar.Location = new Point(612, 409);
+            btnActualizar.Name = "btnActualizar";
+            btnActualizar.Size = new Size(75, 23);
+            btnActualizar.TabIndex = 6;
+            btnActualizar.Text = "Actualizar";
+            btnActualizar.UseVisualStyleBackColor = true;
+            btnActualizar.Click += btnActualizar_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(861, 444);
+            Controls.Add(btnActualizar);
+            Controls.Add(button1);
             Controls.Add(btnAgregar);
             Controls.Add(txtTelefono);
             Controls.Add(label3);
@@ -149,5 +173,7 @@
         private Label label3;
         private TextBox txtTelefono;
         private Button btnAgregar;
+        private Button button1;
+        private Button btnActualizar;
     }
 }
