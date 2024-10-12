@@ -37,8 +37,8 @@
             label3 = new Label();
             txtTelefono = new TextBox();
             btnAgregar = new Button();
-            button1 = new Button();
             btnActualizar = new Button();
+            btnBorrar = new Button();
             ((System.ComponentModel.ISupportInitialize)dgvClientes).BeginInit();
             SuspendLayout();
             // 
@@ -59,6 +59,7 @@
             dgvClientes.Name = "dgvClientes";
             dgvClientes.Size = new Size(837, 218);
             dgvClientes.TabIndex = 1;
+            dgvClientes.CellDoubleClick += dgvClientes_CellDoubleClick;
             // 
             // label1
             // 
@@ -118,19 +119,9 @@
             btnAgregar.UseVisualStyleBackColor = true;
             btnAgregar.Click += btnAgregar_Click;
             // 
-            // button1
-            // 
-            button1.Location = new Point(693, 409);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 5;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
-            // 
             // btnActualizar
             // 
-            btnActualizar.Location = new Point(612, 409);
+            btnActualizar.Location = new Point(693, 409);
             btnActualizar.Name = "btnActualizar";
             btnActualizar.Size = new Size(75, 23);
             btnActualizar.TabIndex = 6;
@@ -138,13 +129,23 @@
             btnActualizar.UseVisualStyleBackColor = true;
             btnActualizar.Click += btnActualizar_Click;
             // 
+            // btnBorrar
+            // 
+            btnBorrar.Location = new Point(612, 409);
+            btnBorrar.Name = "btnBorrar";
+            btnBorrar.Size = new Size(75, 23);
+            btnBorrar.TabIndex = 7;
+            btnBorrar.Text = "Borrar";
+            btnBorrar.UseVisualStyleBackColor = true;
+            btnBorrar.Click += btnBorrar_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(861, 444);
+            Controls.Add(btnBorrar);
             Controls.Add(btnActualizar);
-            Controls.Add(button1);
             Controls.Add(btnAgregar);
             Controls.Add(txtTelefono);
             Controls.Add(label3);
@@ -173,7 +174,7 @@
         private Label label3;
         private TextBox txtTelefono;
         private Button btnAgregar;
-        private Button button1;
         private Button btnActualizar;
+        private Button btnBorrar;
     }
 }
